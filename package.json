@@ -14,6 +14,9 @@
 	"preferGlobal": true,
 	"keywords":     ["shutdown", "stop", "poweroff", "halt", "sleep", "server", "http"],
 	"dependencies": {
+		"node-static":     "^0.7.7",
+		"power-off":       "^1.0.0",
+		"sleep-mode":      "^1.1.0"
 	},
 	"directories": {
 		"src":      "./",
