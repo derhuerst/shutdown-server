@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>shutdown-server</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+body { margin: 1em; font-size: 110%; font-family: "Helvetica Neue", sans-serif }
+button {
+	display: block; margin: 1em 0; padding: .4em;
+	box-sizing: border-box; width: 100%;
+	border: none; border-radius: .2em;
+	color: white; background-color: #2980b9;
+	cursor: pointer;
+}
+button:active { background-color: #1970a9 }
+	</style>
+</head>
+<body>
+	<form id="power-off" action="/power-off" method="POST"></form>
+	<form id="sleep" action="/sleep" method="POST"></form>
+	<button form="power-off">Power off</button>
+	<button form="sleep">Sleep</button>
+</body>
+</html>
