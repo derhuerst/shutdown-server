@@ -2,6 +2,10 @@
 
 Halts your computer or puts it to sleep on an HTTP request. This project is heavily inspired by [`stop-server`](https://github.com/typicode/stop-server).
 
+[![build status](https://img.shields.io/travis/derhuerst/shutdown-server.svg)](https://travis-ci.org/derhuerst/shutdown-server)
+[![dependency status](https://img.shields.io/david/derhuerst/shutdown-server.svg)](https://david-dm.org/derhuerst/shutdown-server#info=dependencies)
+[![dev dependency status](https://img.shields.io/david/dev/derhuerst/shutdown-server.svg)](https://david-dm.org/derhuerst/shutdown-server#info=devDependencies)
+
 
 
 ## Installing
