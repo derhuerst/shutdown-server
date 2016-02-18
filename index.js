@@ -8,7 +8,7 @@ let sleep =    require('sleep-mode')
 
 
 
-let fileServer = new _static.Server('.')
+let fileServer = new _static.Server(__dirname)
 let server = http.createServer()
 
 server.on('request', function (req, res) {

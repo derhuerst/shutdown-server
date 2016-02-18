@@ -20,7 +20,7 @@ npm install -g shutdown-server
 
 `shutdown-server serve` to start *shutdown-server* in foreground.
 
-`shutdown-server install` to start *shutdown-server* in the background. `shutdown-server uninstall` to remove this again.
+`shutdown-server start` to start *shutdown-server* in the background and add an autostart entry. `shutdown-server stop` to remove it again.
 
 
 
