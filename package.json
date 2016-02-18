@@ -29,7 +29,7 @@
 		"lib":      "./"
 	},
 	"scripts": {
-		"serve":    "node ./index.js",
+		"serve":    "./bin.js serve",
 		"test":     "nodeunit test.coffee"
 	}
 }
