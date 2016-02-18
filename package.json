@@ -1,0 +1,25 @@
+{
+	"name":         "shutdown-server",
+	"description":  "Power off your computer from your phone.",
+	"port":         5709,
+	"license":      "ISC",
+	"author":       "Jannis R <mail@jannisr.de>",
+	"homepage":     "https://github.com/derhuerst/shutdown-server",
+	"repository":   "git://github.com/derhuerst/shutdown-server.git",
+	"bugs":         "https://github.com/derhuerst/shutdown-server/issues",
+	"version":      "0.1.0",
+	"main":         "./index.js",
+	"bin":          {"shutdown-server": "./bin.js"},
+	"files":        ["readme.md", "license.md", "./index.js", "./bin.js"],
+	"preferGlobal": true,
+	"keywords":     ["shutdown", "stop", "poweroff", "halt", "sleep", "server", "http"],
+	"dependencies": {
+	},
+	"directories": {
+		"src":      "./",
+		"lib":      "./"
+	},
+	"scripts": {
+		"serve":    "node ./index.js"
+	}
+}
