@@ -1,40 +1,59 @@
 {
-	"name":         "shutdown-server",
-	"description":  "Power off your computer from your phone.",
-	"port":         5709,
-	"license":      "ISC",
-	"author":       "Jannis R <mail@jannisr.de>",
-	"homepage":     "https://github.com/derhuerst/shutdown-server",
-	"repository":   "git://github.com/derhuerst/shutdown-server.git",
-	"bugs":         "https://github.com/derhuerst/shutdown-server/issues",
-	"version":      "0.1.1",
-	"main":         "./index.js",
-	"bin":          {"shutdown-server": "./bin.js"},
-	"files":        ["readme.md", "license.md", "./index.js", "./bin.js"],
-	"preferGlobal": true,
-	"keywords":     ["shutdown", "stop", "poweroff", "halt", "sleep", "server", "http"],
-	"dependencies": {
-		"node-static":     "^0.7.7",
-		"power-off":       "^1.0.0",
-		"sleep-mode":      "^1.1.0",
-		"yargs": "^14.2.3",
-		"sudo-block":      "^1.2.0",
-		"user-startup":    "^0.2.1"
-	},
-	"devDependencies": {
-		"coffee-script":   "^1.10.0",
-		"sinon":           "^1.17.3",
-		"got":             "^6.1.1",
-		"nodeunit": "^0.11.3"
-	},
-	"directories": {
-		"src":      "./",
-		"lib":      "./"
-	},
-	"scripts": {
-		"serve":    "./bin.js serve",
-		"start":    "./bin.js start",
-		"stop":     "./bin.js stop",
-		"test":     "nodeunit test.coffee"
-	}
+  "name": "shutdown-server",
+  "description": "Power off your computer from your phone.",
+  "port": 5709,
+  "license": "ISC",
+  "author": "Jannis R <mail@jannisr.de>",
+  "homepage": "https://github.com/derhuerst/shutdown-server",
+  "repository": "git://github.com/derhuerst/shutdown-server.git",
+  "bugs": "https://github.com/derhuerst/shutdown-server/issues",
+  "version": "0.1.1",
+  "main": "./index.js",
+  "bin": {
+    "shutdown-server": "./bin.js"
+  },
+  "files": [
+    "readme.md",
+    "license.md",
+    "./index.js",
+    "./bin.js"
+  ],
+  "preferGlobal": true,
+  "keywords": [
+    "shutdown",
+    "stop",
+    "poweroff",
+    "halt",
+    "sleep",
+    "server",
+    "http"
+  ],
+  "dependencies": {
+    "node-static": "^0.7.7",
+    "power-off": "^1.0.0",
+    "sleep-mode": "^1.1.0",
+    "yargs": "^14.2.3",
+    "sudo-block": "^1.2.0",
+    "user-startup": "^0.2.1",
+    "snyk": "^1.319.2"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "sinon": "^1.17.3",
+    "got": "^6.1.1",
+    "nodeunit": "^0.11.3"
+  },
+  "directories": {
+    "src": "./",
+    "lib": "./"
+  },
+  "scripts": {
+    "serve": "./bin.js serve",
+    "start": "./bin.js start",
+    "stop": "./bin.js stop",
+    "test": "nodeunit test.coffee",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
